@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice-JAVASCRIPT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="title">
+                <h1>
+                    <span></span>
+                    <h1>Create<br>Calculator<br>JavaScript</h1>
+            </div>
+        </div>
+        <div class="right">
+            <div class="calculatrice">
+                <div class="global">
+                    <input id="display" readonly>
+                    <table>
+                        <tr>
+                            <td><button onclick="clearDisplay('AC')"class="special">AC</button></td>
+                                <td><button onclick="clearDisplayone('DEL')" class="special">DEL</button></td>
+                            <td><button  onclick="('%')"class="special">%</button></td>
+                            <td><button onclick="appendToDisplay('/')" class="special">/</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="appendToDisplay('7')">7</button></td>
+                            <td><button onclick="appendToDisplay('8')">8</button></td>
+                            <td><button onclick="appendToDisplay('9')">9</button></td>
+                            <td><button  onclick="appendToDisplay('*')"class="special">*</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="appendToDisplay('4')">4</button></td>
+                            <td><button onclick="appendToDisplay('5')">5</button></td>
+                            <td><button onclick="appendToDisplay('6')">6</button></td>
+                            <td><button onclick="appendToDisplay('-')" class="special">-</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="appendToDisplay('1')">1</button></td>
+                            <td><button onclick="appendToDisplay('2')">2</button></td>
+                            <td><button onclick="appendToDisplay('3')">3</button></td>
+                            <td><button onclick="appendToDisplay('+')" class="special">+</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="appendToDisplay('0')">0</button></td>
+                            <td><button onclick="appendToDisplay('00')">00</button></td>
+                            <td><button onclick="appendToDisplay('.')">.</button></td>
+                            <td><button onclick="calculate()" class="special">=</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div> 
+        <h1>Documentation de cette projet</h1>
+
+
+        <p>
+            Calculatrice JavaScript
+            * 
+            * Description :
+            * Ce script permet de créer une calculatrice fonctionnelle en utilisant HTML, CSS et JavaScript.
+            * La calculatrice peut effectuer les opérations de base : addition, soustraction, multiplication et division.
+            * 
+            * Fichiers :
+            * - index.html : Structure HTML de la calculatrice
+            * - style.css : Styles CSS pour la mise en forme
+            * - script.js : Logique JavaScript pour les opérations de la calculatrice
+            * 
+            * Utilisation :
+            * Ouvrez index.html dans un navigateur web pour utiliser la calculatrice.
+            * Utilisez la souris ou le clavier pour entrer les chiffres et les opérateurs, et obtenez les résultats des opérations.
+            * 
+            * Auteur :
+            * [Votre nom]
+            * 
+            * Date :
+            * [Date]
+            */
+           
+           // Fonction pour ajouter du texte à l'affichage de la calculatrice
+           function appendToDisplay(input) {
+               display.value += input;
+           }
+           
+           // Fonction pour effacer un caractère de l'affichage de la calculatrice
+           function clearDisplayone() {
+               display.value = display.value.slice(0, -1);
+           }
+           
+           // Fonction pour effacer complètement l'affichage de la calculatrice
+           function clearDisplay() {
+               display.value = "";
+           }
+           
+           // Fonction pour calculer le résultat de l'expression affichée
+           function calculate() {
+               try {
+                   display.value = eval(display.value);
+               } catch {
+                   display.value = "ERROR";
+               }
+           }
+         </p>
+
+
+    </div>
+    <script src="script.js"></script>
+
+
+</body>
+
+
+
+
+</html>
+
+
+

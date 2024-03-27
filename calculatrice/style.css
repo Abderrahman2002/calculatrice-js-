@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#E0E3EC;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left,
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Ajouter un espacement intérieur pour rapprocher le contenu des bords */
+}
+
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative; 
+}
+
+.title h1 {
+    font-size: 90px; /* Ajuster la taille du texte */
+    line-height: 1.2; /* Ajuster l'espacement entre les lignes */
+    text-align: left;
+    
+}
+
+.title span {
+    position: absolute; 
+    height: 100%;
+    width: 20px; /* Augmenter l'épaisseur de la ligne */
+    background-color: black;
+    left: -10%;
+    top: 0;
+}
+
+
+.global {
+    width: 350px; /* Agrandir légèrement la calculatrice */
+    border: 1px solid none;
+    border-radius: 5px;
+}
+
+.calculatrice {
+    display: flex;
+    border-radius: 13px;
+    justify-content: center;
+    background-color: white; /* Changer la couleur de fond en blanc */
+    padding: 20px; /* Ajouter un espacement intérieur */
+}
+
+#display {
+    width: 84%; /* Même largeur que les boutons */
+    padding: 20px; /* Augmentation de la valeur du rembourrage */
+    margin: 5px;
+    margin-right: 10px; /* Déplacer légèrement vers la droite */
+    border: none;
+    outline: none;
+    font-size: 30px;
+    background-color: #ffffff; /* Couleur de fond blanche */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    font-family: 'Digital Dystopia', sans-serif;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table td {
+    text-align: center;
+}
+.calculatrice table tr:first-child td {
+    text-align: left;
+}
+
+button {
+    width: 70px;
+    height: 70px;
+    padding: 12px;
+    margin: 5px;
+    font-size: 25px;
+    border: none;
+    border-radius: 3px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+button.special {
+    color: #0f4571; /* Changer la couleur de fond en bleu */
+     /* Changer la couleur du texte en blanc */
+}
+
