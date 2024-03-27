@@ -1,5 +1,4 @@
 
-Bien sûr ! Voici un exemple de fichier README pour une application de calculatrice en JavaScript :
 
 Calculatrice JavaScript
 Il s'agit d'une application de calculatrice simple construite en utilisant HTML, CSS et JavaScript. Elle permet aux utilisateurs d'effectuer des opérations arithmétiques de base telles que l'addition, la soustraction, la multiplication et la division.
